@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.selectlevel {
+    font-size: 26px;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 50px;
+    transition: background-color 0.3s;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectlevel:hover {
+    background-color: #2980b9;
+}
+
+.trophyimage {
+    display: flex;
+    justify-content: center;
+}
+
+.trophyimage img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainleveldiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level {
+    margin-bottom: 10px;
+}
+
+.level-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+#easytrophy{
+    display: none;
+}
+#mediumtrophy{
+    display: none;
+   
+}
+#hardtrophy{
+    display: none;
+}
