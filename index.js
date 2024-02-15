@@ -20,7 +20,7 @@ function move() {
   }
 }
 
-// progress bar
+
 document.addEventListener("DOMContentLoaded", function () {
 
   var avatarButton = document.getElementById("user-avatar");
