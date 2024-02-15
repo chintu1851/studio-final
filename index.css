@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+h1 {
+  font-size: 3.7vw;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* avatar */
+button {
+  background-color: transparent;
+  border: none;
+  width: 150px;
+  height: 150px;
+}
+
+.avatar-box {
+  position: absolute;
+  margin-top: 20%;
+}
+
+#user-avatar {
+  border: 12px solid #BF493A;
+  /* !!!!!! */
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+#myProgress {
+  position: absolute;
+  margin-top: 40%;
+  width: 40%;
+  border: solid black 5px;
+  border-radius: 30px;
+}
+
+#myBar {
+  width: 5%;
+  height: 30px;
+  background-color: #BF493A;
+  border-radius: 30px;
+}
+
+.setting {
+  position: absolute;
+  background-color: #BF493A;
+  border-radius: 20px;
+  left: 23%;
+  top: -140%;
+  width: 7%;
+  height: 70%;
+  border: solid black 8px;
+}
+
+.setting-logo {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 10%;
+  transform: translateX(-53%);
+}
+
+.score {
+  position: absolute;
+  background-color: #BF493A;
+  border-radius: 20px;
+  left: 69%;
+  top: -140%;
+  width: 7%;
+  height: 70%;
+  border: solid black 8px;
+}
+
+.score-logo {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  top: 15%;
+  transform: translateX(-50%);
+}
