@@ -26,9 +26,18 @@
     <h1 class="login-title">MindMaze Card Challenge</h1>
     <!-- avatar -->
     <div class="avatar-box">
-      <button onclick="move()"><img id="user-avatar2" src="./assets/avatar.jpeg" alt="user avatar"></button>
+      <button id="avatar-button" onclick="move()"><img id="user-avatar2" src="./assets/avatar.jpeg"
+          alt="user avatar"></button>
     </div>
-
+    <div class="user-info">
+      <form id="login-form">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+      </form>
+    </div>
+    <div class="user-start">
+      <button id="startgame" type="submit">Start Game</button>
+    </div>
   </div>
 </body>
 

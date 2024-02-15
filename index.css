@@ -35,7 +35,7 @@ h1 {
 }
 
 /* avatar */
-button {
+#avatar-button {
   background-color: transparent;
   border: none;
   width: 150px;
@@ -58,7 +58,7 @@ button {
 #user-avatar2 {
   border: 12px solid #BF493A;
   position: absolute;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-40%);
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -119,4 +119,39 @@ button {
   width: 90px;
   height: 60px;
   transform: translateX(4%) translateY(35%);
+}
+
+/* form */
+.user-info {
+  position: absolute;
+  margin-top: 20%;
+}
+
+.user-start {
+  position: absolute;
+  margin-top: 28%;
+}
+
+#username {
+  width: 280px;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  /* padding-left: 30px; */
+}
+
+#startgame {
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #BF493A;
+  box-sizing: border-box;
+  border: 5px solid black;
 }
