@@ -38,7 +38,7 @@ function easylevel() {
 
     function redirect() {
         setTimeout(() => {
-            window.location = "/Users/patelchintan/Desktop/Web Dev Second/Studio 2/Studio Practice/section.html";
+            window.location = "section.html";
         }, 1000);
     }
 
@@ -81,6 +81,7 @@ function easylevel() {
                 arr = [];
 
                 if (easyscore === 30) {
+                    point.play();
                     countdown = countdown - 5;
                     clearInterval(countdownInterval);
                     finalscore = (countdown * 3) + 30;
@@ -91,10 +92,10 @@ function easylevel() {
                         redirect();
                     }, 3000);
                 }
-
                 // Re-add click event listeners after cards are hidden
-                checktile();
+
             }, 900);
+            checktile();
         } else if (i == i1) {
             count = 0;
             arr = [];

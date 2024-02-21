@@ -35,11 +35,7 @@ body {
     display: none;
     color: white;
 }
-/* .card img{
-    display: none;
-    width: 70px;
-    height: 70px;
-} */
+
 .maindiv {
     display: flex;
     flex-direction: column;
@@ -61,12 +57,3 @@ button {
     display: flex;
     flex-direction: column;
 }
-/* .logo{
-    width: 200px;
-    height: 200px;
-}
-.popup{
-    display: none;
-    width: 200px;
-    height: 300px;
-} */

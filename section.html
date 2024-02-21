@@ -10,39 +10,47 @@
 
 <body>
     <div class="mainleveldiv">
-        <a href="easy.html" class="trophydisplay">
-            <button id="easy" value="easy" onclick="checkLevel('easy')" class="selectlevel">
+
+        <button id="easy" value="easy" onclick="checkLevel('easy')" class="selectlevel">
+            <a href="easy.html" class="trophydisplay">
                 <div class="level-container">
                     <div class="level"><span class="level-text">Easy</span></div>
-                    <div id="easytrophy"><div class="trophyimage"><img src="trophy.png"></div></div>
-                </div>
-            </button>
-        </a>
-        <a href="medium.html" class="trophydisplay">
-            <button id="medium" value="medium" onclick="checkLevel('medium')" class="selectlevel">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Medium</span></div>
-                </div>
-                <div id="mediumtrophy">
-                    <div class="trophyimage"><img src="trophy.png"></div>
-                    <div class="trophyimage"><img src="trophy.png"></div>
-                </div>
-            </button>
-        </a>
-        <a href="hard.html" class="trophydisplay">
-            <button id="hard" value="hard" onclick="checkLevel('hard')" class="selectlevel">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Hard</span></div>
-                </div>
-                 <div id="hardtrophy">
-                    <div class="trophyimage"><img src="trophy.png"></div>
-                    <div class="trophyimage"><img src="trophy.png"></div>
-                    <div class="trophyimage"><img src="trophy.png"></div>
-                </div>
-            </button>
-        </a>
+            </a>
+            <div id="easytrophy">
+                <div class="trophyimage"><img src="trophy.png"></div>
+            </div>
     </div>
-   <script src="section.js" async defer></script>
+    </button>
+    </a>
+
+    <button id="medium" value="medium" onclick="checkLevel('medium')" class="selectlevel">
+        <a href="medium.html" class="trophydisplay">
+            <div class="level-container">
+                <div class="level"><span class="level-text">Medium</span></div>
+            </div>
+        </a>
+        <div id="mediumtrophy">
+            <div class="trophyimage"><img src="trophy.png"></div>
+            <div class="trophyimage"><img src="trophy.png"></div>
+        </div>
+    </button>
+    </a>
+
+    <button id="hard" value="hard" onclick="checkLevel('hard')" class="selectlevel">
+        <a href="hard.html" class="trophydisplay">
+            <div class="level-container">
+                <div class="level"><span class="level-text">Hard</span></div>
+            </div>
+        </a>
+        <div id="hardtrophy">
+            <div class="trophyimage"><img src="trophy.png"></div>
+            <div class="trophyimage"><img src="trophy.png"></div>
+            <div class="trophyimage"><img src="trophy.png"></div>
+        </div>
+    </button>
+    </a>
+    </div>
+    <script src="section.js" async defer></script>
 </body>
 
 </html>
