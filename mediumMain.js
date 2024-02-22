@@ -36,7 +36,7 @@ function mediumlevel() {
 
     function redirect() {
         setTimeout(() => {
-            window.location = "/Users/patelchintan/Desktop/Web Dev Second/Studio 2/Studio Practice/section.html";
+            window.location = "section.html";
         }, 500);
     }
 
@@ -62,10 +62,10 @@ function mediumlevel() {
     }
 
     function checkCards(i, i1) {
-        if (((i == 0 && i1 == 1) || (i == 1 && i1 == 0)) || ((i == 2 && i1 == 5) || (i == 5 && i1 == 2)) || ((i == 6 && i1 == 11) || (i == 11 && i1 == 6)) || ((i == 3 && i1 == 7) || (i == 7 && i1 == 3)) || ((i == 4 && i1 == 9) || (i == 9 && i1 == 4)) || ((i == 8 && i1 == 10) || (i == 10 && i1 == 8)) ||((i == 12 && i1 == 15) || (i == 15 && i1 == 12)) || ((i == 13 && i1 == 14) || (i == 14 && i1 == 13))  ) {
+        if (((i == 0 && i1 == 1) || (i == 1 && i1 == 0)) || ((i == 2 && i1 == 5) || (i == 5 && i1 == 2)) || ((i == 6 && i1 == 11) || (i == 11 && i1 == 6)) || ((i == 3 && i1 == 7) || (i == 7 && i1 == 3)) || ((i == 4 && i1 == 9) || (i == 9 && i1 == 4)) || ((i == 8 && i1 == 10) || (i == 10 && i1 == 8)) || ((i == 12 && i1 == 15) || (i == 15 && i1 == 12)) || ((i == 13 && i1 == 14) || (i == 14 && i1 == 13))) {
             point.play();
             setTimeout(() => {
-                
+
                 const button1 = document.getElementById(`mcard${i1}`);
                 const button2 = document.getElementById(`mcard${i}`);
                 button1.style.visibility = "hidden";
@@ -73,7 +73,7 @@ function mediumlevel() {
                 button1.classList.add('hidden');
                 button2.classList.add('hidden');
 
-               
+
                 mediumscore = mediumscore + 5;
                 countdown = countdown + 5;
                 document.getElementById("mscore").innerHTML = mediumscore;

@@ -38,7 +38,7 @@ function easylevel() {
 
     function redirect() {
         setTimeout(() => {
-            window.location = "/Users/patelchintan/Desktop/Web Dev Second/Studio 2/Studio Practice/section.html";
+            window.location = "section.html";
         }, 1000);
     }
 

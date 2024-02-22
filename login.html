@@ -30,13 +30,19 @@
           alt="user avatar"></button>
     </div>
     <div class="user-info">
-      <form id="login-form">
+      <!-- <form id="login-form">
         <label for="username"></label>
         <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+      </form> -->
+      <form>
+        <label for="playerName"></label>
+        <input type="text" id="playerName" name="playerName" placeholder="Enter Your Username" required>
       </form>
     </div>
     <div class="user-start">
-      <button id="startgame" type="submit">Start Game</button>
+      <!-- <button id="startgame" type="submit">Start Game</button> -->
+      <button id="startgame" type="submit" onclick="onNameSubmit(event)">Start Game</button>
+      <script src="usersection.js" async defer></script>
     </div>
   </div>
 </body>
