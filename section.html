@@ -2,59 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="section.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Level</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="section.css">
+  <script defer src="section.js"></script>
 </head>
 
 <body>
-    <div class="mainleveldiv">
+  <div class="container">
 
-        <h1>ujjwal</h1>
-
-        <button id="easy" value="easy" onclick="checkLevel('easy')" class="selectlevel">
-            <a href="easy.html" class="trophydisplay">
-                <div class="level-container">
-                    <div class="level"><span class="level-text">Easy</span></div>
-            </a>
-            <div id="easytrophy">
-                <div class="trophyimage"><img src="trophy.png"></div>
-            </div>
+    <!-- background-image -->
+    <img src="./assets/main.png" alt="Background Image" class="background-image">
+    
+    <!-- settings -->
+    <div class="setting">
+      <img class="setting-logo" src="./assets/setting.png" alt="setting logo">
     </div>
-    </button>
-    </a>
 
-    <button id="medium" value="medium" onclick="checkLevel('medium')" class="selectlevel">
-        <a href="medium.html" class="trophydisplay">
-            <div class="level-container">
-                <div class="level"><span class="level-text">Medium</span></div>
-            </div>
-        </a>
-        <div id="mediumtrophy">
-            <div class="trophyimage"><img src="trophy.png"></div>
-            <div class="trophyimage"><img src="trophy.png"></div>
-        </div>
-    </button>
-    </a>
+    <!-- high-score -->
+    <div class="score">
+      <img class="score-logo" src="./assets/score.png" alt="score logo">
+    </div>
 
     
+    <!-- title -->
+    <h1 class="login-title">Select Level</h1>
+    
+    <!-- levels -->
+    <div class="levels">
+   
+          <div id="easy">
+            <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
+            <h2>Easy</h2>
+            <h3>12 Cards</h3>
+          </div>
 
-    <button id="hard" value="hard" onclick="checkLevel('hard')" class="selectlevel">
-        <a href="hard.html" class="trophydisplay">
-            <div class="level-container">
-                <div class="level"><span class="level-text">Hard</span></div>
+          <div id="medium">
+            <div class="star">
+                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
             </div>
-        </a>
-        <div id="hardtrophy">
-            <div class="trophyimage"><img src="trophy.png"></div>
-            <div class="trophyimage"><img src="trophy.png"></div>
-            <div class="trophyimage"><img src="trophy.png"></div>
-        </div>
-    </button>
-    </a>
+            <h2>Medium</h2>
+            <h3>16 Cards</h3>
+          </div>
+          
+          <div id="hard">
+            <div class="star">
+                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B;"></i>
+            </div>
+            <h2>Hard</h2>
+            <h3>20 Cards</h3>
+          </div>
+    
     </div>
-    <script src="section.js" async defer></script>
-</body>
+    
+   
 
+
+  </div>
+
+
+</body>
 </html>
