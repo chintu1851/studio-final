@@ -97,8 +97,6 @@ h1 {
 .setting-logo {
   width: 96px;
   height: 83px;
-  /* width: 85%;
-  height: 76%; */
   transform: translateX(-2%) translateY(14%);
 }
 
@@ -106,12 +104,10 @@ h1 {
   position: absolute;
   background-color: #BF493A;
   border-radius: 20px;
-  left: 69%;
+  left: 82%;
   top: 3%;
   width: 100px;
   height: 100px;
-  /* width: 6.5%;
-  height: 13%; */
   border: solid black 8px;
 }
 
