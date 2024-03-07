@@ -18,7 +18,7 @@ function easylevel() {
                 clearInterval(countdownInterval);
                 document.querySelectorAll('.easy-button').forEach(button => button.disabled = true);
                 console.log("gameover");
-                redirect()
+                gameover()
             }
         }, 1000);
     }, 1000);
@@ -37,10 +37,33 @@ function easylevel() {
     }
 
     function redirect() {
+        openPopup()
         setTimeout(() => {
             window.location = "section.html";
-        }, 1000);
+        }, 10000);
     }
+    function gameover() {
+        finishgame()
+    }
+    function finishgame() {
+        document.getElementById('gamefinish').style.display = 'block'
+    }
+    function restart() {
+        document.getElementById('gamefinish').style.display = 'none'
+        window.location = "section.html";
+    }
+    document.getElementById('restart').addEventListener('click', restart)
+
+    function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        window.location = "section.html";
+    }
+    document.getElementById('closeid').addEventListener('click', closePopup)
 
     function clickButton(i) {
         console.log("click function is awake");
@@ -74,9 +97,8 @@ function easylevel() {
                 button1.classList.add('hidden');
                 button2.classList.add('hidden');
                 easyscore = easyscore + 5;
+                document.getElementById('score').innerHTML = easyscore
                 countdown = countdown + 5;
-                document.getElementById("score").innerHTML = easyscore;
-
                 count = 0;
                 arr = [];
 
@@ -87,13 +109,12 @@ function easylevel() {
                     finalscore = (countdown * 3) + 30;
                     localStorage.setItem("easyscore", finalscore);
                     console.log("this is final score", finalscore);
+                    document.getElementById("easyscore").innerHTML = finalscore
                     console.log("this is remaining time", countdown);
                     setTimeout(() => {
                         redirect();
-                    }, 3000);
+                    }, 1000);
                 }
-                // Re-add click event listeners after cards are hidden
-
             }, 900);
             checktile();
         } else if (i == i1) {
@@ -112,9 +133,8 @@ function easylevel() {
             checktile();
         }
     }
-
     checktile();
 }
-
 easylevel();
+
 console.log("it is working only one time");

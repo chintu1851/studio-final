@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
-  <script defer src="./index.js"></script>
+  
+  <script defer src="./usersection.js"></script>
 </head>
 
 <body>
@@ -32,11 +33,11 @@
     <div class="user-info">
       <form id="login-form">
         <label for="username"></label>
-        <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+        <input type="text" id="playerName" name="playerName" placeholder="Enter Your Username" required>
       </form>
     </div>
     <div class="user-start">
-      <button id="startgame" type="submit">Start Game</button>
+      <button id="startgame" type="submit" onclick="onNameSubmit(event)">Start Game</button>
     </div>
   </div>
 </body>

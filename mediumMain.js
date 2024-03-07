@@ -9,6 +9,7 @@ const point = new Audio("https://www.fesliyanstudios.com/play-mp3/615");
 
 function mediumlevel() {
     console.log("Enter in the mediumlevel");
+     console.log("this is player name", localStorage.getItem("playername"));
     var countdownInterval = setInterval(function () {
         countdown--;
         document.getElementById("mtime").innerHTML = countdown;
@@ -17,6 +18,7 @@ function mediumlevel() {
                 clearInterval(countdownInterval);
                 document.querySelectorAll('.medium-button').forEach(button => button.disabled = true);
                 console.log("gameover");
+                gameover()
             }
         }, 1000);
     }, 1000);
@@ -34,11 +36,35 @@ function mediumlevel() {
         }
     }
 
-    function redirect() {
+   function redirect() {
+        openPopup()
         setTimeout(() => {
             window.location = "section.html";
-        }, 500);
+        }, 10000);
+
     }
+   function gameover() {
+        finishgame()
+    }
+    function finishgame() {
+        document.getElementById('gamefinish').style.display = 'block'
+    }
+    function restart() {
+        document.getElementById('gamefinish').style.display = 'none'
+        window.location = "section.html";
+    }
+    document.getElementById('restart').addEventListener('click', restart)
+
+    function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        window.location = "section.html";
+    }
+    document.getElementById('closeid').addEventListener('click', closePopup)
 
     function clickButton(i) {
         console.log("click function is awake");
@@ -87,6 +113,7 @@ function mediumlevel() {
                     mediumfinalscore = (countdown * 4) + 60;
                     localStorage.setItem("mediumscore", mediumfinalscore);
                     console.log("this is final score", mediumfinalscore);
+                     document.getElementById("meduimscore").innerHTML = mediumfinalscore
                     console.log("this is remaining time", countdown);
                     setTimeout(() => {
                         redirect();

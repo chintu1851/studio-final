@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(interval);
         navigateToNextPage();
       }
-
     }, 10);
   }
 

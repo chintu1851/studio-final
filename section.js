@@ -2,16 +2,131 @@
 
 let easyscore = localStorage.getItem("easyscore")
 let meduimscore = localStorage.getItem("mediumscore")
+let playername = localStorage.getItem("playername")
 
-if(easyscore){
+let score = 0
+
+
+if (easyscore) {
     document.getElementById('easytrophy').style.display = "flex"
+    console.log(easyscore)
+    console.log(meduimscore)
+    console.log("this is player name", localStorage.getItem("playername"));
+    // const formData = { name: playername, score: easyscore }
+
+    // const fetchData = async () => {
+    //     const response = await fetch("http://localhost:8080/getres")
+
+    //     if (!response.ok) {
+    //         throw new Error('Network response was not ok');
+    //     }
+    //     const alldata = await response.json();
+    //     console.log("Sorted data by cid", alldata);
+    // };
+    // fetchData()
+    // const postData = async () => {
+    //     try {
+    //         const response = await fetch("http://localhost:8080/postdata", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify(formData),
+    //         });
+
+    //         if (!response.ok) {
+    //             throw new Error('Network response was not ok');
+    //         }
+    //         fetchData()
+    //         console.log("Data added successfully");
+    //     } catch (error) {
+    //         console.error("Error adding data:", error);
+    //     }
+
+    // };
+    // postData()
 }
-else{
-   document.getElementById('easytrophy').style.display = "none"
+else {
+    document.getElementById('easytrophy').style.display = "none"
 }
-if(meduimscore){
+
+if (meduimscore) {
     document.getElementById('mediumtrophy').style.display = "flex"
 }
-else{
-document.getElementById('mediumtrophy').style.display = "none"
+else {
+    document.getElementById('mediumtrophy').style.display = "none"
 }
+
+
+// const formData = { name: playername, score: easyscore }
+
+// const fetchData = async () => {
+//     const response = await fetch("http://localhost:8080/getres")
+
+//     if (!response.ok) {
+//         throw new Error('Network response was not ok');
+//     }
+//     const alldata = await response.json();
+//     console.log("Sorted data by cid", alldata);
+// };
+// fetchData()
+// const postData = async () => {
+//     try {
+//         const response = await fetch("http://localhost:8080/postdata", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json",
+//             },
+//             body: JSON.stringify(formData),
+//         });
+
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         fetchData()
+//         console.log("Data added successfully");
+//     } catch (error) {
+//         console.error("Error adding data:", error);
+//     }
+
+// };
+
+document.getElementById("backbutton").addEventListener('click', function () {
+    // postData()
+    if (easyscore || meduimscore) {
+        if ((easyscore && meduimscore) !== null) {
+            score = parseInt(easyscore) + parseInt(meduimscore)
+            window.location = "login.html"
+        }
+        else if (meduimscore) {
+            score = meduimscore
+            window.location = "login.html"
+        }
+        else {
+            score = easyscore
+            window.location = "login.html"
+        }
+        console.log("this is final score ", score)
+
+    }
+    // else if(mediumscore){
+    //        if ((easyscore && meduimscore) !== null) {
+    //         score = parseInt(easyscore) + parseInt(meduimscore)
+    //         window.location = "login.html"
+    //     }
+    //     else if (meduimscore) {
+    //         score = meduimscore
+    //         window.location = "login.html"
+    //     }
+    //     else {
+    //         score = easyscore
+    //         window.location = "login.html"
+    //     }
+    // }
+    else {
+        score = 0
+        window.location = "login.html"
+    }
+    localStorage.setItem("finalscore", score)
+
+})
