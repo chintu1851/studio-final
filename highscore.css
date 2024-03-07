@@ -1,0 +1,27 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-container {
+    display: flex;
+    width: 772px;
+    height: 93px;
+    background-color: #BF493A;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.player-container span {
+    font-size: 40px;
+    font-family: Montserrat;
+    color: white;
+    margin: 35px;
+}
+
