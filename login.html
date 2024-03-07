@@ -14,33 +14,24 @@
 
 <body>
   <div class="container">
-    <img src="./assets/main.png" alt="Background Image" class="background-image">
-    <!-- content -->
-    <!-- <div class="setting">
-      <img class="setting-logo" src="./assets/setting.png" alt="setting logo">
-    </div> -->
+    <!-- score-button -->
     <div class="score">
       <img class="score-logo" src="./assets/score.png" alt="score logo">
     </div>
     <!-- title -->
-    <h1 class="login-title">MindMaze Card Challenge</h1>
+    <h1>MindMaze Card Challenge</h1>
     <!-- avatar -->
     <div class="avatar-box">
       <button id="avatar-button" onclick="move()"><img id="user-avatar2" src="./assets/avatar.jpeg"
           alt="user avatar"></button>
     </div>
     <div class="user-info">
-      <!-- <form id="login-form">
-        <label for="username"></label>
-        <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
-      </form> -->
       <form>
         <label for="playerName"></label>
         <input type="text" id="playerName" name="playerName" placeholder="Enter Your Username" required>
       </form>
     </div>
     <div class="user-start">
-      <!-- <button id="startgame" type="submit">Start Game</button> -->
       <button id="startgame" type="submit" onclick="onNameSubmit(event)">Start Game</button>
       <script src="usersection.js" async defer></script>
     </div>
