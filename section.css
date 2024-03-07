@@ -96,6 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
   }
 
   #easy > h2{
@@ -130,6 +131,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+
   }
 
   #medium > h2{
@@ -163,6 +166,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+
   }
 
   #hard > h2{
