@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - MindMaze Card Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- score-button -->
+    <div class="score">
+      <img class="score-logo" src="./assets/score.png" alt="score logo">
+    </div>
+    <!-- title -->
+    <h1>MindMaze Card Challenge</h1>
+    <!-- avatar -->
+    <div class="avatar-box">
+      <button id="avatar-button" onclick="move()"><img id="user-avatar2" src="./assets/avatar.jpeg"
+          alt="user avatar"></button>
+    </div>
+    <div class="user-info">
+      <form>
+        <label for="playerName"></label>
+        <input type="text" id="playerName" name="playerName" placeholder="Enter Your Username" required>
+      </form>
+    </div>
+    <div class="user-start">
+      <button id="startgame" type="submit" onclick="onNameSubmit(event)">Start Game</button>
+      <script src="usersection.js" async defer></script>
+    </div>
+  </div>
+</body>
+
+</html>

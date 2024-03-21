@@ -11,6 +11,7 @@ body {
 .carddisplay {
     display: flex;
     flex-direction: row;
+     
 }
 
 .card {
@@ -22,8 +23,14 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+  
 }
-
+.card0{
+    position: fixed;
+}
+.card1{
+        position: fixed;
+}
 .card h3 {
     display: none;
     color: white;
